@@ -29,7 +29,7 @@ main = do
             , bench "1024" $ nf (gen rng) 1024
             , bench "4096" $ nf (gen rng) 4096
             ]
-        , bgroup "generate random bytes (continous)"
+        , bgroup "generate random bytes (continuous)"
             [ bench "1"    $ nf (gen2 rngref) 1
             , bench "8"    $ nf (gen2 rngref) 8
             , bench "16"   $ nf (gen2 rngref) 16
